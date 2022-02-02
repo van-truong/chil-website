@@ -250,7 +250,7 @@ def paper_vis():
     return render_template("papers_vis.html", **data)
 
 
-@app.route("/calendar.html")
+@app.route("/schedule.html")
 def schedule():
     data = _data()
     data["day"] = {
