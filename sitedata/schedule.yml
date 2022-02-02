@@ -1,9 +1,9 @@
 thursday:
   - time: "10:00-10:05 AM"
     type: Opening
-    title: Welcome and Opening Remarks
+    title: Welcome and Opening Remarks - testing updating schedule
     speaker: Marzyeh Ghassemi
-    moderator:
+    moderator: Test moderator
     doclink:
     link: "/live.html"
     linktext: Watch Live
