@@ -1,0 +1,1168 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    
+    <script type="text/javascript">
+      var auth0_domain = "chil.us.auth0.com";
+      var auth0_client_id = "idrCis50v8uMru0k189CZY3LXVK9tUnY";
+    </script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.7/auth0-spa-js.production.js"></script>
+    <script type="text/javascript" src="/static/js/modules/auth0protect.js"></script>
+    
+
+    <link rel="icon" type="image/png" href="/static/images/favicon.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha256-93wNFzm2GO3EoByj9rKZCwGjAJAwr0nujPaOgwUt8ZQ="
+          crossorigin="anonymous"/>
+
+    <!-- External Fonts (no google for china) -->
+    <link rel="stylesheet" href="/static/css/main.css"/>
+    <!-- <link rel="stylesheet" href="/static/css/fa_regular.css"/> -->
+    <link rel="stylesheet" href="/static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="/static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="/static/css/typeahead.css"/>
+
+    <title>CHIL
+      
+        : Schedule
+      
+    </title>
+  
+  <link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdn.jsdelivr.net/npm/tui-calendar@1/dist/tui-calendar.min.css"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.10/dist/css/bootstrap-select.min.css"
+/>
+
+</head>
+
+<body>
+<!-- NAV -->
+
+  
+
+  
+
+
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto btco-hover-menu" id="main-nav">
+    <div class="container">
+        
+        
+          <a class="navbar-brand" href="/index.html">CHIL 2024</a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+              class="collapse navbar-collapse flex-grow-1"
+              id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              
+
+              
+
+              
+
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="organizationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Organization
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="organizationDropdown">
+                  <li>
+                    
+                      <a class="dropdown-item" href="/committee.html">Committee</a>
+                    
+                      <a class="dropdown-item" href="/sponsor.html">Sponsorship</a>
+                    
+                      <a class="dropdown-item" href="/codeconduct.html">Code of Conduct</a>
+                    
+                      <a class="dropdown-item" href="/communityguidelines.html">Community Guidelines</a>
+                    
+                  </li>
+                </ul>
+              </li>
+              
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Past Events
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2023Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2023</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2023Dropdown">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2023/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/invited.html">Invited</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/panels.html">Panels</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/debates.html">Debates</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2022Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2022</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2022Dropdown">
+                          
+                            
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2022/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/tutorials.html">Tutorials</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2021Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2021</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2021Dropdown">
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2021/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/tutorials.html">Tutorials</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/workshops.html">Workshops</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2020Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2020</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2020Dropdown">
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2020/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/tutorials.html">Tutorials</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/workshops.html">Workshops</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/symposiums.html">Symposiums</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+
+
+  <!-- User Overrides -->
+  
+  
+
+  <div class="container content-wrapper">
+      <!-- Tabs -->
+      <div class="tabs">
+          
+  <div class="page-header text-center">
+    <h1>Schedule</h1>
+  </div>
+  <ul class="nav nav-pills justify-content-center">
+  
+  <li class="nav-item">
+    <a
+      class="nav-link active text-muted "
+      data-toggle="tab"
+      href="#tab-thursday"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Thursday, June 22
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      class="nav-link  text-muted "
+      data-toggle="tab"
+      href="#tab-friday"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Friday, June 23
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      class="nav-link  text-muted "
+      data-toggle="tab"
+      href="#tab-saturday"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Saturday, June 24
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+      <!-- Content -->
+      <div class="content">
+          
+  <div class="page-content">
+    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+      <p class="text-center">This schedule is subject to change. All times are in Eastern Daylight Time (EDT).</p>
+
+      <!-- Thursday tab -->
+      <div
+        class="tab-pane active"
+        id="tab-thursday"
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab"
+      >
+            <table class="table table-bordered table-sm">
+    <thead>
+    <tr>
+      <th style='width:15%'>Time</th>
+      <th style='width:70%'>Title</th>
+      <th style='width:15'>Location</th>
+    </tr>
+    </thead>
+     <tbody>
+    <tr>
+      <td>8:00am - 9:00am</td>
+      <td>Check-in and Refreshments</td>
+      <td>Broad Lobby</td>
+    </tr>
+    <tr>
+      <td>9:00am - 9:05am</td>
+      <td>Welcome and Opening Remarks</td>
+      <td>Broad Auditorium</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="keynote"><span class="border-left-0"><span class="font-weight-bold">Keynote Session I: Innovation in Machine Learning for Health</span></span></td>
+      <td></td>
+    </tr>
+     <tr>
+      <td>9:05am - 9:50am</td>
+      <td><a href="program.html#tab-keynotes">Biomedical Question Answering Yesterday, Today, and Tomorrow</a><br>
+      <span class="font-italic"><span class="font-weight-bold">Dina Demner-Fushman, MD, PhD,</span> National Institutes of Health</span></td>
+      <td>Broad Auditorium</td>
+    </tr>
+     <tr>
+      <td>9:50am - 10:35am</td>
+      <td><a href="program.html#tab-keynotes">Safe Deployment of Medical Imaging AI</a><br>
+        <span class="font-italic"><span class="font-weight-bold">Ben Glocker, PhD,</span> Imperial College London</span>
+      </td> 
+      <td>Broad Auditorium</td>
+    </tr>
+     <tr>
+      <td>10:35am - 11:00am</td>
+      <td>Networking Break</td>
+      <td>Broad Lobby</td>
+    </tr>
+    <tr>
+      <td>11:00am - 12:00pm</td>
+      <td><span class="font-weight-bold">Oral Talks I</span><br>
+        <span class="font-italic">Li Xu, Bo Liu, Ameer Hamza Khan, Lu Fan, <span class="font-weight-bold">Xiao-Ming Wu</span></span>: <a href="proceeding_P13.html">Multi-modal Pre-training for Medical Vision-language Understanding and Generation: An Empirical Study with A New Benchmark</a><br>
+        <span class="font-italic"><span class="font-weight-bold">Vincent Jeanselme</span>, Chang Ho Yoon, Brian Tom, Jessica Barrett</span>: <a href="proceeding_P12.html">Neural Fine-Gray: Monotonic neural networks for competing risks</a><br>
+        <span class="font-italic"><span class="font-weight-bold">Eunbyeol Cho</span>, Min Jae Lee, Kyunghoon Hur, Jiyoun Kim, Jinsung Yoon, Edward Choi</span>: <a href="proceeding_P28.html">Rediscovery of CNN's Versatility for Text-based Encoding of Raw Electronic Health Records</a><br>
+        <span class="font-italic"><span class="font-weight-bold">William La Cava</span>, Elle Lett, Guangya Wan</span>: <a href="proceeding_P23.html">Fair Admission Risk Prediction with Proportional Multicalibration</a>
+      </td>
+      <td>Broad Auditorium</td>
+    </tr>
+     <tr>
+      <td>12:00pm - 1:00pm</td>
+      <td>Lunch Break</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="keynote"><span class="border-left-0"><span class="font-weight-bold">Keynote Session II: Foundations of Health: Machine Learning for Genomics</span></span></td>
+      <td>
+    </tr>
+    <tr>
+      <td>1:00pm - 1:45pm</td>
+      <td><a href="program.html#tab-keynotes">Biological Sequence Modeling in Research and Applications</a><br>
+      <span class="font-italic"><span class="font-weight-bold">Jun Cheng, PhD,</span> DeepMind</span></td> 
+      <td>Broad Auditorium</td>
+    </tr>
+     <tr>
+      <td>1:45pm - 2:45pm</td>
+      <td><span class="font-weight-bold">Oral Talks II</span><br>
+      <span class="font-italic"><span class="font-weight-bold">Kevin Wu</span>, Dominik Dahlem, Christopher Hane, Eran Halperin, James Zou</span>: <a href="proceeding_P24.html">Collecting data when missingness is unknown: a method for improving model performance given under-reporting in patient populations</a><br>
+      <span class="font-italic"><span class="font-weight-bold">Christina X Ji</span>, Ahmed Alaa, David Sontag</span>: <a href="proceeding_P09.html">Large-Scale Study of Temporal Shift in Health Insurance Claims</a><br>
+      <span class="font-italic"><span class="font-weight-bold">Toshiya Yoshida</span>, Trinity Shuxian Fan, Tyler McCormick, Zhenke Wu, Zehang Richard Li</span>: <a href="proceeding_P17.html">Bayesian Active Questionnaire Design for Cause-of-Death Assignment Using Verbal Autopsies</a><br>
+      <span class="font-italic"><span class="font-weight-bold">Eric Lehman</span>, Evan Hernandez, Diwakar Mahajan, Jonas Wulff, Micah J. Smith, Zachary Ziegler, Daniel Nadler, Peter Szolovits, Alistair Johnson, Emily Alsentzer</span>: <a href="proceeding_P31.html">Do We Still Need Clinical Language Models?</a><br>
+    </td>
+    <td>Broad Auditorium</td>
+    </tr>
+    <tr>
+      <td>2:45pm - 3:10pm</td>
+      <td>Networking Break</td>
+      <td>Broad Lobby</td>
+    </tr>
+     <tr>
+      <td>3:10pm - 4:10pm</td>
+      <td><span class="font-weight-bold"><a href="proceedings.html#tab-postera">Session III: Poster Session A</a></span></td>
+      <td>Broad Lobby</td>
+    </tr>
+     <tr>
+      <td>4:10pm - 5:10pm</td>
+      <td>
+      <span class="font-weight-bold">Session IV: Sharing Health Data in an Age of Generative AI: Risks, Limitations, and Solutions</span><br>
+      <a href="program.html#tab-panels">Panel Discussion</a><br>
+      <span class="font-italic"><span class="font-weight-bold">Ziad Obermeyer, MD,</span> UC Berkeley, <span class="font-weight-bold">John Halamka, MD,</span> Mayo Clinic, <span class="font-weight-bold">Elaine Nsoesie, PhD,</span> Boston University, and <span class="font-weight-bold">Khaled El Emam, PhD,</span> University of Ottawa.
+Moderated by <span class="font-weight-bold">Marzyeh Ghassemi, PhD,</span> MIT</span></td> 
+      <td>Broad Auditorium</td>
+    </tr>
+     <tr>
+      <td>5:10pm - 5:15pm</td>
+      <td>Closing Remarks</td>
+      <td>Broad Auditorium</td>
+    </tr>
+     <tr>
+      <td>5:15pm - 6:15pm</td>
+      <td>Reception</td>
+      <td>Broad Lobby</td>
+    </tr>
+  </tbody>
+</table>
+        <!-- <div class="cards row">
+  <table class="table-schedule table table-striped table-responsive">
+  <thead>
+    <tr>
+      <th scope="col" width=150px>Time (EDT)</th>
+      <th scope="col" width=120px>Type</th>
+      <th scope="col">Title</th>
+      <th scope="col">Speaker</th>
+      <th scope="col">Moderator</th>
+      <th scope="col" width=100px></th>
+    </tr>
+  </thead>
+    <tbody>
+    
+    <tr>
+      <td>12:00 - 12:10 PM</td>
+      <td>Opening</td>
+      <td>
+          Welcome and Opening Remarks
+          </td>
+      <td>Tristan Naumann</td>
+      <td>--</td>
+      <td>
+          Livestream
+          </td>
+    </tr>
+    
+    <tr>
+      <td>12:10 - 1:10 PM</td>
+      <td>Tutorial</td>
+      <td>
+          Changing patient trajectory: A case study exploring implementation and deployment of clinical machine learning models
+          </td>
+      <td>Yindalon Aphinyanaphongs</td>
+      <td>Bobak Mortazavi</td>
+      <td>
+          Zoom
+          </td>
+    </tr>
+    
+    <tr>
+      <td>12:10 - 1:10 PM</td>
+      <td>Tutorial</td>
+      <td>
+          Causal Inference from text data
+          </td>
+      <td>Dhanya Sridhar</td>
+      <td>Harvineet Singh</td>
+      <td>
+          Zoom
+          </td>
+    </tr>
+    
+    <tr>
+      <td>12:10 - 1:10 PM</td>
+      <td>Tutorial</td>
+      <td>
+          &#39;Are log scales endemic yet?&#39; Strategies for visualizing biomedical and public health data
+          </td>
+      <td>Anamaria Crisan</td>
+      <td>Jesse Gronsbell</td>
+      <td>
+          Zoom
+          </td>
+    </tr>
+    
+    <tr>
+      <td>1:10 - 1:30 PM</td>
+      <td>Keynote</td>
+      <td>
+          Algorithmic fairness and the science of health disparities
+          </td>
+      <td>Rumi Chunara</td>
+      <td>--</td>
+      <td>
+          Livestream
+          </td>
+    </tr>
+    
+    <tr>
+      <td>1:30 - 1:50 PM</td>
+      <td>Keynote</td>
+      <td>
+          Data science against COVID-19
+          </td>
+      <td>Nuria Oliver</td>
+      <td>--</td>
+      <td>
+          Livestream
+          </td>
+    </tr>
+    
+    <tr>
+      <td>1:50 - 2:10 PM</td>
+      <td>Q&amp;A</td>
+      <td>
+          Panel Q&amp;A with Rumi Chunara and Nuria Oliver
+          </td>
+      <td></td>
+      <td>Matthew McDermott</td>
+      <td>
+          Livestream
+          </td>
+    </tr>
+    
+    <tr>
+      <td>2:10 PM</td>
+      <td>Spotlight 06</td>
+      <td>
+          Counterfactually guided policy transfer in clinical settings
+          </td>
+      <td>Taylor Killian</td>
+      <td>--</td>
+      <td>
+          Livestream
+          </td>
+    </tr>
+    
+    <tr>
+      <td>2:17 PM</td>
+      <td>Spotlight 08</td>
+      <td>
+          Evaluating domain generalization for survival analysis in clinical studies
+          </td>
+      <td>Florian Pfiseterer</td>
+      <td>--</td>
+      <td>
+          Livestream
+          </td>
+    </tr>
+    
+    <tr>
+      <td>2:24 PM</td>
+      <td>Spotlight 29</td>
+      <td>
+          Estimating model performance on external datasets from their limited statistical characteristics
+          </td>
+      <td>Tal El Hay</td>
+      <td>--</td>
+      <td>
+          Livestream
+          </td>
+    </tr>
+    
+    <tr>
+      <td>2:31 PM</td>
+      <td>Spotlight 10</td>
+      <td>
+          Enriching unsupervised user embedding via medical concepts
+          </td>
+      <td>Xiaolei Huang</td>
+      <td>--</td>
+      <td>
+          Livestream
+          </td>
+    </tr>
+    
+    <tr>
+      <td>2:38 PM</td>
+      <td>Spotlight 26</td>
+      <td>
+          Multi-task adversarial learning for treatment effect estimation in basket trials
+          </td>
+      <td>Zhixuan Chu</td>
+      <td>--</td>
+      <td>
+          Livestream
+          </td>
+    </tr>
+    
+    <tr>
+      <td>2:45 PM</td>
+      <td>Spotlight 28</td>
+      <td>
+          Neural Survival Clustering: Non parametric mixture of neural networks for survival clustering
+          </td>
+      <td>Vincent Jeanselme</td>
+      <td>--</td>
+      <td>
+          Livestream
+          </td>
+    </tr>
+    
+    <tr>
+      <td>2:52 PM</td>
+      <td>Spotlight 30</td>
+      <td>
+          ADCB: An Alzheimer&#39;s disease simulator for benchmarking observational estimators of causal effects
+          </td>
+      <td>Newton Mwai Kinyanjui</td>
+      <td>--</td>
+      <td>
+          Livestream
+          </td>
+    </tr>
+    
+    <tr>
+      <td>2:59 PM</td>
+      <td>Spotlight 41</td>
+      <td>
+          Semi-Markov offline reinforcement learning for healthcare
+          </td>
+      <td>Mehdi Fatemi</td>
+      <td>--</td>
+      <td>
+          Livestream
+          </td>
+    </tr>
+    
+    <tr>
+      <td>3:05 PM</td>
+      <td>Break</td>
+      <td>
+          Sponsored Break
+          </td>
+      <td></td>
+      <td>--</td>
+      <td>
+          Gather
+          </td>
+    </tr>
+    
+    <tr>
+      <td>3:30 - 4:30 PM</td>
+      <td>Research Roundtable</td>
+      <td>
+          Human centered AI for health and wellness
+          </td>
+      <td>Rosa Arriaga</td>
+      <td>Bobak Mortazavi</td>
+      <td>
+          Gather
+          </td>
+    </tr>
+    
+    <tr>
+      <td>3:30 - 4:30 PM</td>
+      <td>Research Roundtable</td>
+      <td>
+          Responsible AI for health
+          </td>
+      <td>Leo Celi</td>
+      <td>Stephen Pfohl</td>
+      <td>
+          Gather
+          </td>
+    </tr>
+    
+    <tr>
+      <td>3:30 - 4:30 PM</td>
+      <td>Research Roundtable</td>
+      <td>
+          Social and environmental determinants of health
+          </td>
+      <td>Esra Suel</td>
+      <td>Sanja Šćepanović</td>
+      <td>
+          Gather
+          </td>
+    </tr>
+    
+    <tr>
+      <td>4:30 - 4:50 PM</td>
+      <td>Keynote</td>
+      <td>
+          Machine learning for human genetics: A multi-scale view on complex traits and disease
+          </td>
+      <td>Lorin Crawford</td>
+      <td>--</td>
+      <td>
+          Livestream
+          </td>
+    </tr>
+    
+    <tr>
+      <td>4:50 - 5:10 PM</td>
+      <td>Keynote</td>
+      <td>
+          Reducing bias in machine learning systems: Understanding drivers of pain
+          </td>
+      <td>Jure Leskovec</td>
+      <td>--</td>
+      <td>
+          Livestream
+          </td>
+    </tr>
+    
+    <tr>
+      <td>5:10 - 5:30 PM</td>
+      <td>Q&amp;A</td>
+      <td>
+          Panel Q&amp;A with Lorin Crawford and Jure Leskovec
+          </td>
+      <td></td>
+      <td>Rahul Krishnan</td>
+      <td>
+          Livestream
+          </td>
+    </tr>
+    
+    </tbody>
+  </table>
+</div> -->
+      </div>
+      <!-- Friday tab -->
+      <div
+        class="tab-pane"
+        id="tab-friday"
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab"
+      >
+          <table class="table table-bordered table-sm">
+    <thead>
+    <tr>
+      <th style='width:15%'>Time</th>
+      <th style='width:70%'>Title</th>
+      <th style='width:15'>Location</th>
+    </tr>
+    </thead>
+     <tbody>
+    <tr>
+      <td>8:00am - 9:00am</td>
+      <td>Check-in and Refreshments</td>
+      <td>Broad Lobby</td>
+    </tr>
+    <tr>
+      <td>9:00am - 9:05am</td>
+      <td>Opening Remarks</td>
+      <td>Broad Auditorium</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="keynote"><span class="border-left-0"><span class="font-weight-bold">Keynote Session V: Learning to Move Beyond Barriers</span></span></td>
+    </tr>
+     <tr>
+      <td>9:05am - 9:50am</td>
+      <td><a href="program.html#tab-keynotes">Bridging Machine Learning and Collaborative Action Research: A Tale Engaging with Diverse Stakeholders in Digital Mental Health</a><br>
+      <span class="font-italic"><span class="font-weight-bold">Munmun De Choudhury, PhD,</span> Georgia Tech</span></td>
+      <td>Broad Auditorium</td>
+    </tr>
+     <tr>
+      <td>9:50am - 10:35am</td>
+      <td><a href="program.html#tab-keynotes">A Healthcare Platform Powered by ML and Radio Waves</a><br>
+        <span class="font-italic"><span class="font-weight-bold">Dina Katabi, PhD,</span> MIT</span>
+      </td> 
+      <td>Broad Auditorium</td>
+    </tr>
+     <tr>
+      <td>10:35am - 11:00am</td>
+      <td>Networking Break</td>
+      <td>Broad Lobby</td>
+    </tr>
+    <tr>
+      <td>11:00am - 12:00pm</td>
+      <td><span class="font-weight-bold">Oral Talks III</span><br>
+      Yi Yang, <span class="font-italic"><span class="font-weight-bold">Hejie Cui</span>, Carl Yang</span>: <a href="proceeding_P30.html">PTGB: Pre-Train Graph Neural Networks for Brain Network Analysis</a><br>
+      <span class="font-italic"><span class="font-weight-bold">
+      Siyi Tang</span>, Jared A. Dunnmon, Liangqiong Qu, Khaled K. Saab, Tina Baykaner, Christopher Lee-Messer, Daniel L. Rubin</span>: <a href="proceeding_P11.html">Modeling Multivariate Biosignals With Graph Neural Networks and Structured State Space Models</a><br>
+      <span class="font-italic"><span class="font-weight-bold">Sarwan Ali</span>, Babatunde Bello, Prakash Chourasia, Ria Thazhe Punathil, Pin-Yu Chen, Imdad Ullah Khan, Murray Patterson</span>: <a href="proceeding_P06.html">Virus2Vec: Viral Sequence Classification Using Machine Learning</a><br>
+      <span class="font-italic">Mingyue Tang, <span class="font-weight-bold">Jiechao Gao</span>, Guimin Dong, Carl Yang, Brad Campbell, Brendan Bowman, Jamie Marie Zoellner, Emaad Abdel-Rahman, Mehdi Boukhechba</span>: <a href="proceeding_P14.html">SRDA: Mobile Sensing based Fluid Overload Detection for End Stage Kidney Disease Patients using Sensor Relation Dual Autoencoder</a>
+      </td>
+      <td>Broad Auditorium</td>
+    </tr>
+     <tr>
+      <td>12:00pm - 1:00pm</td>
+      <td>Lunch Break</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="keynote"><span class="border-left-0"><span class="font-weight-bold">Keynote Session VI: Equity Implications of Machine Learning in Health: How Technology Could Help or Hurt</span></span></td>
+    </tr>
+    <tr>
+      <td>1:00pm - 1:45pm</td>
+      <td><a href="program.html#tab-keynotes">Skin in the Game: The State of AI in Dermatology</a><br>
+      <span class="font-italic"><span class="font-weight-bold">Roxana Daneshjou, MD, PhD,</span> Stanford University</span></td> 
+      <td>Broad Auditorium</td>
+    </tr>
+     <tr>
+      <td>1:45pm - 2:30pm</td>
+      <td><a href="program.html#tab-keynotes">Using Machine Learning to Increase Equity in Healthcare and Public Health</a><br>
+      <span class="font-italic"><span class="font-weight-bold">Emma Pierson, PhD, </span> Cornell Tech</span></td>
+      <td>Broad Auditorium</td> 
+    </tr>
+    <tr>
+      <td>2:30pm - 3:00pm</td>
+      <td>Networking Break</td>
+      <td>Broad Lobby</td>
+    </tr>
+     <tr>
+      <td>3:00pm - 4:00pm</td>
+      <td><span class="font-weight-bold"><a href="proceedings.html#tab-posterb">Session VII: Poster Session B</a></span></td>
+      <td>Broad Lobby</td>
+    </tr>
+     <tr>
+      <td>4:00pm - 5:00pm</td>
+      <td>
+      <span class="font-weight-bold">Session VIII: Generalizability in Machine Learning for Health: Critical for Robustness or a Distraction from Specific Validation?</span><br>
+      <a href="program.html#tab-panels">Panel Discussion</a><br>
+      <span class="font-italic"><span class="font-weight-bold">Leo Celi, MD,</span> MIT, <span class="font-weight-bold">Jason Fries, PhD,</span> Stanford University, <span class="font-weight-bold">Lauren Oakden-Rayner, MD, PhD,</span> University of Adelaide, and <span class="font-weight-bold">Maia Hightower, MD, MBA, MPH,</span> University of Chicago Medicine.
+Moderated by <span class="font-weight-bold">Isaac Kohane, MD, PhD,</span> Harvard Medical School</span></td> 
+      <td>Broad Auditorium</td> 
+    </tr>
+     <tr>
+      <td>5:00pm - 5:05pm</td>
+      <td>Closing Remarks</td>
+      <td>Broad Auditorium</td> 
+    </tr>
+     <tr>
+      <td>5:15pm - 7:15pm</td>
+      <td>Evening Social at Microsoft New England AI Conference Center</td>
+      <td>1 Memorial Dr., Cambridge, MA 02142</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <!-- Saturday tab -->
+      <div
+        class="tab-pane"
+        id="tab-saturday"
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab"
+      >
+          <table class="table table-bordered table-sm">
+    <thead>
+    <tr>
+      <th style='width:15%'>Time</th>
+      <th style='width:70%'>Title</th>
+      <th style='width:15'>Location</th>
+    </tr>
+    </thead>
+     <tbody>
+    <tr>
+      <td>8:30am - 9:00am</td>
+      <td>Check-in and Refreshments</td>
+      <td>CSAIL 1st Floor Lobby</td>
+    </tr>
+    <tr>
+      <td>9:00am - 9:05am</td>
+      <td>Opening Remarks</td>
+      <td>CSAIL Kirsch Auditorium</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="keynote"><span class="border-left-0"><span class="font-weight-bold">Session IX: The State of Machine Learning for Health: Where Are We Now, and Where Do We Go?</span></span></td>
+    </tr>
+     <tr>
+      <td>9:05am - 9:55am</td>
+      <td><a href="program.html#tab-invited">Invited Talk on Research and Top Recent Papers from 2020-2022</a><br>
+      <span class="font-italic"><span class="font-weight-bold">Suchi Saria, PhD,</span> Johns Hopkins University & Bayesian Health</span></td>
+      <td>CSAIL Kirsch Auditorium</td>
+    </tr>
+     <tr>
+      <td>9:55am - 10:45am</td>
+      <td><a href="program.html#tab-invited">Invited Talk on Recent Deployments and Real-world Impact</a><br>
+        <span class="font-italic"><span class="font-weight-bold">Karandeep Singh, MD,</span> University of Michigan</span>
+      </td> 
+      <td>CSAIL Kirsch Auditorium</td>
+    </tr>
+     <tr>
+      <td>10:45am - 11:10am</td>
+      <td>Networking Break</td>
+      <td>CSAIL 4th Floor Lobby</td>
+    </tr>
+    <tr>
+      <td>11:10am - 12:00pm</td>
+      <td><a href="program.html#tab-invited">Invited Talk on Under-explored Research Challenges and Opportunities</a><br>
+        <span class="font-italic"><span class="font-weight-bold">Nigam Shah, MBBS, PhD,</span> Stanford University</span>
+      </td>
+      <td>CSAIL Kirsch Auditorium</td>
+    </tr>
+     <tr>
+      <td>12:00pm - 12:45pm</td>
+      <td><a href="program.html#tab-invited">Machine Learning for Healthcare in the Era of ChatGPT</a><br>
+        <span class="font-italic"><span class="font-weight-bold">Karandeep Singh, MD,</span> University of Michigan, <span class="font-weight-bold">Nigam Shah, MBBS, PhD,</span> Stanford University, <span class="font-weight-bold">Saadia Gabriel, PhD,</span> MIT, and <span class="font-italic"><span class="font-weight-bold">Tristan Naumann, PhD,</span> Microsoft Research</span>. Moderated by <span class="font-weight-bold">Byron Wallace, PhD,</span> Northeastern University</span>.
+</td>
+      <td>CSAIL Kirsch Auditorium</td>
+    </tr>
+    <tr>
+      <td>12:45pm - 1:30pm</td>
+      <td>Lunch Break</td> 
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="keynote"><span class="border-left-0"><span class="font-weight-bold">Session X: Intentionally Contentious Debates</span></span></td>
+    </tr>
+    <tr>
+      <td>1:30pm - 1:50pm</td>
+      <td><a href="program.html#tab-debates">NetworkStudies: As Many Databases as Possible or Enough to Answer the Question Quickly?</a><br>
+        <span class="font-italic"><span class="font-weight-bold">Christopher Chute, MD,</span> Johns Hopkins University and <span class="font-weight-bold">Robert Platt, PhD,</span> McGill University</span>
+      </td>
+      <td>CSAIL Kirsch Auditorium</td>
+    </tr>
+     <tr>
+      <td>1:50pm - 2:10pm</td>
+      <td><a href="program.html#tab-debates">Data Heterogeneity: More Heterogeneous Data or Less Homogeneous Data?</a><br>
+        <span class="font-italic"><span class="font-weight-bold">Tianxi Cai, ScD,</span> Harvard Medical School and <span class="font-weight-bold">Yong Chen, PhD,</span> University of Pennsylvania</span>
+      </td>
+      <td>CSAIL Kirsch Auditorium</td>
+    </tr>
+    <tr>
+      <td>2:10pm - 2:30pm</td>
+      <td><a href="program.html#tab-debates">Differential Privacy vs. Synthetic Data</a><br>
+        <span class="font-italic"><span class="font-weight-bold">Khaled El Emam, PhD,</span> University of Ottawa and <span class="font-weight-bold">Li Xiong, PhD,</span> Emory University</span>
+      </td>
+      <td>CSAIL Kirsch Auditorium</td>
+    </tr>
+     <tr>
+      <td>2:30pm - 3:00pm</td>
+      <td><span class="font-weight-bold"><a href="program.html#tab-roundtables">Session XI: Research Roundtables</a></span><br>
+        Bridging the gap between the business of value-based care and the research of health AI, <span class="font-italic"><span class="font-weight-bold">Yubin Park, PhD</span>, ApolloMed</span><br>
+        Auditing Algorithm Performance and Equity, <span class="font-italic"><span class="font-weight-bold">Alistair Johnson, DPhil</span>, Hospital for Sick Children</span><br>
+        Data privacy: Interactive or Non-interactive?, <span class="font-italic"><span class="font-weight-bold">Khaled El Emam, PhD,</span> University of Ottawa and <span class="font-weight-bold">Li Xiong, PhD,</span> Emory University</span><br>
+        Data Heterogeneity: More Heterogeneous Data or Less Homogeneous Data?, <span class="font-weight-bold">Tianxi Cai, ScD,</span> Harvard Medical School and <span class="font-weight-bold">Yong Chen, PhD,</span> University of Pennsylvania</span><br>
+        NetworkStudies: As Many Databases as Possible or Enough to Answer the Question Quickly?, <span class="font-italic"><span class="font-weight-bold">Christopher Chute, MD,</span> Johns Hopkins University and <span class="font-weight-bold">Robert Platt, PhD,</span> McGill University</span></td>
+        <td>CSAIL 4th floor Star and Kiva Rooms</td>
+    </tr>
+    <tr>
+      <td>3:00pm - 3:30pm</td>
+      <td>Networking Break</td> 
+      <td>CSAIL 4th Floor Lobby</td>
+    </tr>
+    <tr>
+      <td>3:30pm - 4:45pm</td>
+      <td><span class="font-weight-bold">
+      Session XII: Doctoral Symposium</span></td> 
+      <td>CSAIL 4th Floor Lobby</td>
+    </tr>
+    <tr>
+      <td>4:45pm - 5:15pm</td>
+      <td><span class="font-weight-bold">
+      Session XIII: I Can’t Believe It’s Not Better Lightning Talks</span><br>
+      <span class="font-italic"><span class="font-weight-bold">David Bellamy</span>, Bhawesh Kumar, Cindy Wang, Andrew Beam</span> : Can pre-trained Transformers beat simple baselines on lab data?<br>
+      <span class="font-italic"><span class="font-weight-bold">Hiba Ahsan</span>, Silvio Amir, Byron Wallace</span> : On the Difficulty of Disentangling Race in Representations of Clinical Notes<br>
+      <span class="font-italic"><span class="font-weight-bold">Olga Demler</span></span> : On intransitivity of win ratio and area under the receiver operating characteristics curve<br>
+      <span class="font-italic"><span class="font-weight-bold">Wouter van Amsterdam</span>, Rajesh Ranganath</span> : My prediction model is super accurate so it will be useful for treatment decision making, right? Wrong!<br>
+      <span class="font-italic"><span class="font-weight-bold">Yuan Zhao</span>, David Benkeser, Russell Kempker</span> : Doubly Robust Approaches for Estimating Treatment Effect in Observational Studies are not Better than G-Computation
+    </td> 
+      <td>CSAIL Kirsch Auditorium</td>
+    </tr>
+     <tr>
+      <td>5:15pm - 5:20pm</td>
+      <td>Closing Remarks</td>
+      <td>CSAIL Kirsch Auditorium</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+    </div>
+  </div>
+
+  
+
+      </div>
+  </div>
+
+
+
+  <!-- Sponsors -->
+  
+
+
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-left">© 2023 CHIL Organization Committee</p>
+    </div>
+  </footer>
+
+
+
+  
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+          integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+          crossorigin="anonymous"></script>
+
+  <script
+          src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+          integrity="sha256-2JaAhvdQnfNMMnhWPauHOZ2k+dzftBmBjjownu3HC4g="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+          integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+          integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+          crossorigin="anonymous"></script>
+
+  <!-- Library libs_ext -->
+  <script type="text/javascript" src="/static/js/libs_ext/typeahead.bundle.js"></script>
+
+  <!--    Internal Libs -->
+  <script type="text/javascript" src="/static/js/data/api.js"></script>
+
+  <!-- Google Analytics -->
+  <script
+          async
+          type="text/javascript"
+          src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+
+      // Nested dropdown navigation menu
+      var ddHoverOrClick = function (e) {
+        var $el = $(this);
+        var $parent = $(this).offsetParent('.dropdown-menu');
+
+        if (!$(this).next().hasClass('show')) {
+            $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+        }
+
+        var $subMenu = $(this).next('.dropdown-menu');
+        $subMenu.toggleClass('show');
+
+        $(this).parent('li').toggleClass('show');
+
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+            $('.dropdown-menu .show').removeClass('show');
+        });
+
+         if (!$parent.parent().hasClass('navbar-nav')) {
+            $el.next().css({
+              "top": $el[0].offsetTop,
+              "left": -$parent.outerWidth()
+            });
+        }
+
+        return false;
+      };
+
+      $('.dropdown-menu a.dropdown-toggle').click(ddHoverOrClick).hover(ddHoverOrClick).on('touchstart', ddHoverOrClick);
+    });
+  </script>
+
+  <!-- Prevent focus from jumping to embedded rocket.chat with an iframe id="chatFrame" -->
+  <script type="text/javascript">
+    if ($("#chatFrame").length > 0) {
+          $("#chatFrame").hide();
+          $("#chatFrame").on(
+            "load",
+            function() {
+              setTimeout(
+                function(){
+                  $('#chatFrame').show();
+                  $('#chatFrame').removeAttr('style');
+                },
+                3000
+              );
+            }
+          )
+    }
+  </script>
+
+  <!-- <script src="/static/js/modules/lazyLoad.js"></script> -->
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/ical.js@1.4.0/build/ical.min.js"
+        integrity="sha256-iFbWWsVYU6rIgbq5wJc4mp8zvV3SkqupxgH/7a9PanY="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tui-code-snippet@1.5.2/dist/tui-code-snippet.min.js"></script>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/tui-dom@3.0.0/dist/tui-dom.min.js"
+        integrity="sha256-Ha3QUAK/d/Z2BMN/hDoBjwP0Q0f5uS9MploTRSLqrLI="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tui-calendar@1/dist/tui-calendar.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.10/dist/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+
+<script type="text/javascript" src="static/js/modules/lazyLoad.js"></script>
+<script type="text/javascript" src="static/js/modules/urlParams.js"></script>
+<script type="text/javascript" src="static/js/views/calendar.js"></script>
+
+  
+
+</body>
+</html>

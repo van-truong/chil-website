@@ -1,0 +1,852 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    
+    <script type="text/javascript">
+      var auth0_domain = "chil.us.auth0.com";
+      var auth0_client_id = "idrCis50v8uMru0k189CZY3LXVK9tUnY";
+    </script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.7/auth0-spa-js.production.js"></script>
+    <script type="text/javascript" src="/static/js/modules/auth0protect.js"></script>
+    
+
+    <link rel="icon" type="image/png" href="/static/images/favicon.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha256-93wNFzm2GO3EoByj9rKZCwGjAJAwr0nujPaOgwUt8ZQ="
+          crossorigin="anonymous"/>
+
+    <!-- External Fonts (no google for china) -->
+    <link rel="stylesheet" href="/static/css/main.css"/>
+    <!-- <link rel="stylesheet" href="/static/css/fa_regular.css"/> -->
+    <link rel="stylesheet" href="/static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="/static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="/static/css/typeahead.css"/>
+
+    <title>CHIL
+      
+        : Call for Papers
+      
+    </title>
+  
+</head>
+
+<body>
+<!-- NAV -->
+
+  
+
+  
+
+
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto btco-hover-menu" id="main-nav">
+    <div class="container">
+        
+        
+          <a class="navbar-brand" href="/index.html">CHIL 2024</a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+              class="collapse navbar-collapse flex-grow-1"
+              id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              
+
+              
+
+              
+
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="organizationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Organization
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="organizationDropdown">
+                  <li>
+                    
+                      <a class="dropdown-item" href="/committee.html">Committee</a>
+                    
+                      <a class="dropdown-item" href="/sponsor.html">Sponsorship</a>
+                    
+                      <a class="dropdown-item" href="/codeconduct.html">Code of Conduct</a>
+                    
+                      <a class="dropdown-item" href="/communityguidelines.html">Community Guidelines</a>
+                    
+                  </li>
+                </ul>
+              </li>
+              
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Past Events
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2023Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2023</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2023Dropdown">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2023/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/invited.html">Invited</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/panels.html">Panels</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/debates.html">Debates</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2022Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2022</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2022Dropdown">
+                          
+                            
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2022/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/tutorials.html">Tutorials</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2021Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2021</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2021Dropdown">
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2021/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/tutorials.html">Tutorials</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/workshops.html">Workshops</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2020Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2020</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2020Dropdown">
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2020/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/tutorials.html">Tutorials</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/workshops.html">Workshops</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/symposiums.html">Symposiums</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+
+
+  <!-- User Overrides -->
+  
+
+
+  <div class="container content-wrapper">
+      <!-- Tabs -->
+      <div class="tabs">
+          
+  <div class="page-header text-center">
+    <h1>Call for Papers</h1>
+  </div>
+  <ul class="nav nav-pills justify-content-center">
+  
+  <li class="nav-item">
+    <a
+      class="nav-link active text-muted "
+      data-toggle="tab"
+      href="#tab-author-info"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Author Information
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      class="nav-link  text-muted "
+      data-toggle="tab"
+      href="#tab-reviewer"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Reviewer Instructions
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      class="nav-link  text-muted "
+      data-toggle="tab"
+      href="#tab-track-1"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Track 1: Models and Methods
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      class="nav-link  text-muted "
+      data-toggle="tab"
+      href="#tab-track-2"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Track 2: Applications and Practice
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      class="nav-link  text-muted "
+      data-toggle="tab"
+      href="#tab-track-3"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Track 3: Impact and Society
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+      <!-- Content -->
+      <div class="content">
+          
+  <div class="page-content">
+    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+      <!-- Author Information tab -->
+      <div
+        class="tab-pane active"
+        id="tab-author-info"
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab"
+      >
+        <p>The AHLI Conference on Health, Inference, and Learning (CHIL) solicits work across a variety of disciplines, including machine learning, statistics, epidemiology, health policy, operations, and economics. CHIL 2023 invites submissions focussed on significant problems affecting health. Specifically, authors are invited to submit 8-10 page papers (with unlimited pages for references) to any of the tracks described below.</p>
+<p>To ensure that all submissions to CHIL are reviewed by a knowledgeable and appropriate set of reviewers, the conference is divided into tracks and areas of interest. Authors will select exactly one primary track and area of interest when they register their submissions, in addition to one or more sub-disciplines.</p>
+<p>Track Chairs will oversee the reviewing process. In case you are not sure which track your submission fits under, feel free to contact the Track or Proceedings Chairs for clarification. The Proceedings Chairs reserve the right to move submissions between tracks and/or areas of interest if the Proceedings believes that a submission has been misclassified.</p>
+<h3>Important Dates</h3>
+<ul>
+<li>Submissions due: <s>Feb 3rd, 11:59 EST</s> Feb 15th, 11:59 EST</li>
+<li>Author/Reviewer Discussion period: <s>March 10th - March 24th</s> March 20th - April 3rd</li>
+<li>Author notification: <s>April 3rd</s> April 10th</li>
+<li>CHIL conference: June 22-24 </li>
+</ul>
+<!-- **NOTE**: The submission portal will remain open until **January 18, 2022 (11:59 pm AoE)** for those who would like to make revisions to their submitted work. -->
+
+<h3>Submission Tracks</h3>
+<ul>
+<li>Track 1: Models and Methods</li>
+<li>Track 2: Applications and Practice</li>
+<li>Track 3: Policy: Impact and Society</li>
+</ul>
+<!-- For mode detail on the scope of each track, including examples of papers that would be suitable for each track, please refer to the track descriptions available at the top of this page. -->
+
+<!-- ### Sub-Disciplines
+These are called topics in the submission form. Authors should select one or more discipline(s) in machine learning for health (ML4H) from the following list when submitting their paper: benchmark datasets, distribution shift, transfer learning, population health, social networks, scalable ML4H systems, natural language processing (NLP), computer vision, time series, bias/fairness, causality, *-omics, wearable-data, etc. Peer reviewers are assigned according to expertise in the sub-discipline(s) selected, so please choose your relevant topics carefully. -->
+
+<h2>Evaluation</h2>
+<p>Works submitted to CHIL will be reviewed by at least 3 reviewers. Reviewers will be asked to primarily judge the work according to the following criteria:</p>
+<p><strong>Relevance</strong>: All submissions to CHIL are expected to be relevant to health. Concretely, this means that the problem is well-placed into the relevant themes for the conference. Reviewers will be able to recommend that submissions change tracks or flag submissions that are not suitable for the venue as a whole.</p>
+<p><strong>Quality</strong>: Is the submission technically sound? Are claims well supported by theoretical analysis or experimental results? Is this a complete piece of work or work in progress? Are the authors careful and honest about evaluating both the strengths and weaknesses of their work?</p>
+<p><strong>Originality</strong>: Are the tasks or methods new? Is the work a novel combination of well-known techniques? Is it clear how this work differs from previous contributions? Is related work adequately cited? </p>
+<p><strong>Clarity</strong>: Is the submission clearly written? Is it well organized? (If not, please make constructive suggestions for improving its clarity.) Does it adequately inform the reader? (Note: a superbly written paper provides enough information for an expert reader to reproduce its results.)</p>
+<p><strong>Significance</strong>: Are the results important? Are others (researchers or practitioners) likely to use the ideas or build on them? Does the submission address a difficult task in a better way than previous work? Does it advance the state of the art in a demonstrable way? Does it provide unique data, unique conclusions about existing data, or a unique theoretical or experimental approach?</p>
+<p>Final decisions will be made by Track and Proceedings Chairs, taking into account reviewer comments, ratings of confidence and expertise, and our own editorial judgment. </p>
+<!-- Guidelines for reviewers: [link](https://docs.google.com/document/d/1UV5AZUQ95VBci57AAgfHEbFbYo5cM91dTIAr-nbeAJo/edit). -->
+
+<!-- ### Camera Ready
+For accepted papers, authors will need to provide the following camera-ready materials by March 5:
+
+- Metadata for the eRights system
+- Submit forms for approval
+- Final versions of papers
+- Dual Submission Policy
+
+You may not submit papers that are identical, or substantially similar to versions that are currently under review at another conference or journal, have been previously published, or have been accepted for publication. Submissions to the main conference are considered archival and will appear in the published proceedings of the conference if accepted.
+
+An exception to this rule is extensions of workshop papers that have previously appeared in non-archival venues, such as workshops, arXiv, or similar without formal proceedings. These works may be submitted as-is or in an extended form. CHIL also welcomes full paper submission that extend previously published short papers or abstracts, so long as the previously published version does not exceed 4 pages in length. Note that the submission should not cite the workshop/report and preserve anonymity in the submitted manuscript. -->
+
+<h2>Submission Format and Guidelines</h2>
+<h3>Submission Site</h3>
+<p>Submissions should be made via OpenReview: <a href="https://openreview.net/group?id=chilconference.org/CHIL/2023/Conference">https://openreview.net/group?id=chilconference.org/CHIL/2023/Conference</a>
+. 
+At least one author of each accepted paper is required to register for, attend, and present the work at the conference in order for the paper to appear in the conference proceedings.</p>
+<!-- Submissions should be made via the online submission system: [https://openreview.net/group?id=chilconference.org/CHIL/2022/Conference](https://openreview.net/group?id=chilconference.org/CHIL/2022/Conference). -->
+
+<h3>Length and Formatting</h3>
+<p>Submitted papers must be 8-10 pages (including all figures and tables), plus unlimited pages for references. Additional supplementary materials (e.g., appendices) can be submitted with their main manuscript. Reviewers will not be required to read the supplementary materials.</p>
+<p>Authors are required to use the LaTeX template: <a href="https://drive.google.com/file/d/1EQc5RHHc5u7zdKhBCy1wIqwo0V0fGi-p/view?usp=sharing">Download</a> or <a href="https://www.overleaf.com/latex/templates/chil-2023-template/yrwrrhnxsjwc">Overleaf</a>.</p>
+<!-- Authors are required to use the LaTeX template: [Overleaf](https://www.overleaf.com/latex/templates/chil-2022-template/jsypybzpbbdd) or [Download](https://chilconference.org/chil-template-2022.zip). -->
+
+<p><strong>Required Sections</strong> <br />
+Similar to last year, two sections will be required: 1) Data and Code Availability, and 2) Institutional Review Board (IRB).</p>
+<p><u>Data and Code Availability</u>: This initial paragraph is <strong>required</strong>. Briefly state what data you use (including citations if appropriate) and whether the data are available to other researchers. If you are not sharing code, you must explicitly state that you are not making your code available. If you are making your code available, then at the time of submission for review, please include your code as supplemental material or as a code repository link; in either case, your code must be anonymized. If your paper is accepted, then you should de-anonymize your code for the camera-ready version of the paper. If you do not include this data and code availability statement for your paper, or you provide code that is not anonymized at the time of submission, then your paper will be desk-rejected. Your experiments later could refer to this initial data and code availability statement if it is helpful (e.g., to avoid restating what data you use).</p>
+<p><u>Institutional Review Board (IRB)</u>: This endmatter section is <strong>required</strong>. If your research requires IRB approval or has been designated by your IRB as Not Human Subject Research, then for the cameraready version of the paper, you must provide IRB information (and at the time of submission for review, you can say that this IRB information will be provided if the paper is accepted). If your research does not require IRB approval, then you must state this to be the case. This section does not count toward the paper page limit.</p>
+<h3>Archival Submissions</h3>
+<p>Submissions to the main conference are considered archival and will appear in the published proceedings of the conference if accepted. Author notification of acceptance will be provided towards April 2023.</p>
+<!--
+
+**Topic Areas** <br />
+In addition to specifying a Track, authors should specify one or more topics for their work. In general, topics can be considered independent of Track and may be used to help identify appropriate reviewers. 
+
+- Active Learning / Continuous Learning Systems
+- Adversarial Robustness
+- Algorithmic Fairness / Bias
+- Bayesian Learning
+- Causal Inference
+- Claims Data
+- Dataset Release and/or Characterization
+- Deployment
+- Economics
+- Electronic Health Records
+- Federated Learning
+- Few / Zero Shot Learning
+- Generative Models / GANs
+- HCI / Data Visualization
+- Interpretability
+- Medical Image Analysis / Computer Vision
+- Mobile Health
+- Natural Language Processing
+- Networks & Graphs
+- Omics
+- Open Software
+- Patient Generated Health Data
+- Population Health / Public Health
+- Pretraining / Transfer Learning
+- Privacy / Security
+- Reinforcement Learning
+- Representation Learning
+- Reproducibility
+- Scalability
+- Semisupervised Learning / Distant Supervision
+- Signal Processing / Time Series
+- Social Determinants of Health
+- Spatiotemporal Data
+- Survival Analysis
+- Uncertainty / Distribution Shift
+- Unsupervised Learning
+
+If you feel that none of the topic areas above apply to your work, please let us know: [info@chilconference.org](mailto:info@chilconference.org).
+
+### Dual Submission Policy
+You may not submit papers that are identical, or substantially similar to versions that are currently under review at another conference or journal, have been previously published, or have been accepted for publication. Submissions to the main conference are considered archival and will appear in the published proceedings of the conference if accepted.
+An exception to this rule is extensions of workshop papers that have previously appeared in non-archival venues, such as workshops, arXiv, or similar without formal proceedings. These works may be submitted as-is or in an extended form. CHIL also welcomes full paper submissions that extend previously published short papers or abstracts, so long as the previously published version does not exceed 4 pages in length. Note that the submission should not cite the workshop/report and preserve anonymity in the submitted manuscript.
+-->
+
+<h3>Preprint Submission Policy</h3>
+<p>Submissions to preprint servers (such as ArXiv or MedRxiv) are allowed while the papers are under review. While reviewers will be encouraged not to search for the papers, you accept that uploading the paper may make your identity known. </p>
+<h3>Peer Review</h3>
+<p>The review process is mutually anonymous. Please submit completely anonymized drafts. Please do not include any identifying information, and refrain from citing the authors’ own prior work in anything other than third-person. Violations to this policy may result in rejection without review.</p>
+<p>Conference organizers and reviewers are required to maintain confidentiality of submitted material. Upon acceptance, the titles, authorship, and abstracts of papers will be released prior to the conference.</p>
+<p>You may not submit papers that are identical, or substantially similar to versions that are currently under review at another conference or journal, have been previously published, or have been accepted for publication. Submissions to the main conference are considered archival and will appear in the published proceedings of the conference if accepted.</p>
+<p>An exception to this rule is extensions of workshop papers that have previously appeared in non-archival venues, such as workshops, arXiv, or similar without formal proceedings. These works may be submitted as-is or in an extended form. CHIL also welcomes full paper submission that extend previously published short papers or abstracts, so long as the previously published version does not exceed 4 pages in length. Note that the submission should not cite the workshop/report and preserve anonymity in the submitted manuscript.</p>
+<h3>Open Access</h3>
+<p>CHIL is committed to open science and ensuring our proceedings are freely available. </p>
+<!-- ### Ethics Guidelines
+ACM CHIL abides by ethics guidelines provided here: [ACM Ethics guidelines](https://ethics.acm.org/). -->
+
+<!-- ## Contact Us
+Please direct questions to [info@chilconference.org](mailto:info@chilconference.org) and follow us on Twitter [@chilconference](https://twitter.com/CHILconference). -->
+      </div>
+      <!-- reviewer instructions -->
+      <div
+        class="tab-pane fade"
+        id="tab-reviewer"
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab"
+      >
+        <h2><center> Reviewing for CHIL 2023</h2>
+<p>Reviewing is a critical service in any research community, especially for the vibrant and growing community on machine learning for health that we are all part of. Every submission deserves thoughtful, constructive feedback that both (1) identifies quality work worth highlighting at this venue and (2) helps authors improve their work for either this venue or a future publication.</p>
+<p>Here we provide instructions for reviewers to help us achieve these goals, across the 4 distinct phases of reviewing (Bidding, Assignment, Review, and Discussion).</p>
+<p>Jump to: Timeline and Workload - <a href="#bidding">bidding</a> - <a href="#assignment">assignment</a> - <a href="#reviewing">reviewing</a> - <a href="#discussion">discussion</a> </p>
+<h3>Timeline and Workload</h3>
+<p>To deliver high-quality reviews, you (a CHIL reviewer) are expected to participate in the 4 distinct phases of review:</p>
+<ul>
+<li><s> Bidding period (2/4 - 2/7)<ul>
+<li>Skim abstracts and suggest &gt;10 submissions you are interested in / qualified for</li>
+<li>Estimated time commitment: 1 hour or less </s></li>
+</ul>
+</li>
+<li>Assignment period <s>(2/8 - 2/18)</s> (2/16 - 2/17)<ul>
+<li>Skim each of your assigned papers and report immediately<ul>
+<li>Formatting violations</li>
+<li>Anonymity or Conflict of Interest violations </li>
+<li>Topics you are not qualified to review</li>
+</ul>
+</li>
+<li>Workload: 2-5 papers per reviewer</li>
+<li>Estimated time commitment: 10 minutes per paper</li>
+</ul>
+</li>
+<li>Review period <s>(2/8 - 3/3)</s> (2/17 - 3/14)<ul>
+<li>Deliver thoughtful review comments in timely fashion </li>
+<li>Workload: 2-5 papers per reviewer</li>
+<li>Estimated time commitment: 2-5 hours per paper, spread out asynchronously</li>
+</ul>
+</li>
+<li>Discussion period <s>(3/10 - 3/24)</s> (3/17 - 4/3)<ul>
+<li>Provide comments that respond to author feedback, other reviewers, and chairs</li>
+<li>Workload: 2-5 papers per reviewer</li>
+<li>Estimated time commitment: 1-2 hours per paper, spread out asynchronously</li>
+</ul>
+</li>
+</ul>
+<h3><s><a name="bidding"></a>Bidding Period Instructions</h3>
+<p>After all submissions are received on Feb. 3, you (a CHIL reviewer) will have the opportunity to review submitted titles/abstracts within OpenReview and indicate which papers you are most qualified for and excited about. Bidding instructions will be provided via email.</p>
+<p>Please bid promptly (by 2/7) and bid generously.</s></p>
+<h3><a name="assignment"></a>Assignment Period Instructions</h3>
+<p>By 2/17, you (a CHIL reviewer) will be formally assigned 2-5 papers to review for CHIL.
+We ask for each reviewer to promptly (within 10 days) skim their assigned papers to ensure:</p>
+<ul>
+<li>no violations of required formatting rules (page limits, margins, etc)</li>
+<li>no violations of anonymity (author names, institution names, github links, etc)</li>
+<li>sufficient expertise to review the paper</li>
+</ul>
+<p>If you feel that you cannot offer an informed opinion about the quality of the paper due to expertise mismatch, please write to your assigned Area Chair on OpenReview ASAP. Because of the diverse interests and finite availability of the research community, we cannot always reassign reviewers, but chairs will do our best to make sure each submission has the most competent reviewers available in the pool.</p>
+<h3><a name="reviewing"></a>Reviewing Period Instructions</h3>
+<p>Between 2/17 and 3/14, you will be asked to complete thoughtful, constructive reviews for all assigned papers. Please make sure to complete your reviews by March 14th, 11:59 EST (earlier preferred). For each paper, you’ll fill out a form on OpenReview, similar to the form below:</p>
+<h4>Review format</h4>
+<ol>
+<li>Summary of the paper
+    <ol type="a">
+      <li>Summarize *your* understanding of the paper. Stick to the facts: ideally, the authors should agree with everything written here.</li>
+    </ol></li>
+<li>Strengths
+    <ol type="a">
+      <li>Identify the promising aspects of the work.</li>
+    </ol></li>
+<li>Weaknesses
+    <ol type="a">
+      <li>Every paper that does not meet the bar for publication is the scaffolding upon which a better research idea can be built. If you believe the work is insufficient, help the authors see where they can take their work and how. </li>
+      <li>If you are asking for more experiments, elucidate clearly <strong>why</strong> you are recommending the authors consider an experiment as well as what <strong>new</strong> information your suggested experiment might shed on the proposed method. </li>
+    </ol></li>
+<li>Questions for the authors
+    <ol type="a">
+      <li>Communicate your potential misunderstandings of the work, to help authors craft a helpful and engaging response.</li>
+      <li>Be explicit about how responses to each of your questions might change your score for the paper. Prioritize questions that would lead to big potential score changes.</li>
+    </ol></li>
+</ol>
+<h4>Emergency Reviewing</h4>
+<p>To accommodate last minute emergencies, we will be seeking emergency reviewers for papers who do not receive all reviews by the deadline. Emergency reviewers will be sent a maximum of 3 papers by 3/15, and will need to write their reviews in a short time frame (between 3/15 and 3/18). Emergency review signup will be indicated in the reviewer signup form.</p>
+<h4>General Advice for preparing reviews</h4>
+<p>Follow the golden rule: be on time, provide polite and constructive reviews that you yourself would be happy to receive as an author. Be sure to review the paper, not the authors. When making statements about the paper, use phrases like “the paper proposes” rather than “the authors propose”. This makes your review less personal and separates critiques of the submission from critiques of the authors.</p>
+<h5>External resources:</h5>
+<ul>
+<li>Remember <a href="https://www.themarginalian.org/2014/03/28/daniel-dennett-rapoport-rules-criticism/">Dennett's 4 rules for successful critical feedback</a><ul>
+<li>Especially, you should not give criticism without first acknowledging strengths and what you have learned from the submission.</li>
+</ul>
+</li>
+<li>ACL 2017 blogpost on <a href="https://acl2017.wordpress.com/2017/02/23/last-minute-reviewing-advice/">advice for reviewers</a></li>
+<li><a href="https://sites.umiacs.umd.edu/elm/2016/02/01/mistakes-reviewers-make/">Mistakes reviewers make</a> has some common errata to keep an eye out for </li>
+<li>Matthew McDermott has some <a href="https://mmcdermott.github.io/How-to-PhD/skill_modules/communication#how-do-you-review-papers">useful advice on structuring reviews</a>.</li>
+</ul>
+<p>If you are a junior reviewer, there is no harm in asking a senior mentor or colleague to provide you with feedback on your review (though do not breach confidentiality).</p>
+<h5>Track specific advice for preparing reviews for a CHIL submission</h5>
+<ul>
+<li>Track 1: it is acceptable for a paper to use synthetic data to evaluate a proposed method. Not every paper must touch real health data, though all methods should be primarily motivated by health applications and the realism of the synthetic data is fair to critique</li>
+<li>Track 2: the contribution of this track should be either more focused on solving a carefully motivated problem grounded in applications or on deployments or datasets that enable exploration and evaluation of applications</li>
+<li>Track 3: meaningful contributions to this track can include a broader scope of contribution beyond algorithmic development. Innovative and impactful use of existing techniques is encouraged</li>
+</ul>
+<h3><a name="discussion"></a>Discussion and Consensus-Building Period Instructions</h3>
+<p>Between 3/20 and 4/3, you (a CHIL reviewer) will be expected to participate in discussions on OpenReview by reading the authors’ response and comments from other reviewers, adding additional comments from your perspective, and updating your review accordingly. </p>
+<p>We expect brief but thoughtful engagement from all reviewers here. For some papers, this would involve several iterations of feedback-response. A simplistic response of “I have read the authors’ response and I chose to keep my score unchanged” is not sufficient, because it does not provide detailed reasoning about what weaknesses are still salient and why the response is not sufficient. Please engage meaningfully!</p>
+<p>Track Chairs will work with reviewers to try to reach a consensus decision about each paper by 4/3. In the event that consensus is not reached, Track Chairs make final decisions about acceptance.</p>
+      </div>
+      <!-- Track 1 -->
+      <div
+        class="tab-pane fade"
+        id="tab-track-1"
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab"
+      >
+        <h2><center> Models and Methods:<br /> Algorithms, Inference, and Estimation </center></h2>
+<h3>Track Chairs</h3>
+<ul>
+<li>Dr. Michael Hughes, Tufts University</li>
+<li>Dr. Yuyin Zhou, Univ. of California - Santa Cruz</li>
+<li>Dr. Jean Feng, Univ. of California - San Francisco</li>
+<li>Dr. Rahul Krishnan, University of Toronto</li>
+<li>Dr. Samantha Kleinberg, Stevens Institute of Technology</li>
+</ul>
+<h3>Description</h3>
+<p>Advances in machine learning are critical for a better understanding of health. This track seeks technical contributions in modeling, inference, and estimation in health-focused or health-inspired settings. We welcome submissions that develop novel methods and algorithms, introduce relevant machine learning tasks, identify challenges with prevalent approaches, or learn from multiple sources of data (e.g. non-clinical and clinical data).</p>
+<p>Our focus on health is broadly construed, including clinical healthcare, public health, and population health. While submissions should be primarily motivated by problems relevant to health, the contributions themselves are not required to be directly applied to real health data. For example, authors may use synthetic datasets to demonstrate properties of their proposed algorithms.  </p>
+<p>We welcome submissions from many perspectives, including but not limited to supervised learning, unsupervised learning, reinforcement learning, causal inference, representation learning, survival analysis, domain adaptation or generalization, interpretability, robustness, and algorithmic fairness. All kinds of health-relevant data types are in scope, including tabular health records, time series, text, images, videos, knowledge graphs, and more. We welcome all kinds of methodologies, from deep learning to probabilistic modeling to rigorous theory and beyond.</p>
+<p>Upon submission, authors will select one or more relevant sub-discipline(s). Peer reviewers for a paper will be experts in the sub-discipline(s) selected upon its submission, so please select your relevant disciplines judiciously.</p>
+<!-- #### Tasks
+- Supervised learning
+- Semi-supervised learning
+- Few-shot learning
+- Federated learning
+- Unsupervised learning
+- Transfer learning
+- Domain adaptation and generalization
+- Representation learning
+- Causal inference
+- Survival analysis
+- Reinforcement learning
+- Algorithmic fairness
+
+#### Approaches
+- Deep learning
+- Bayesian methods
+- Structured learning
+- Adversarial learning
+- Robust statistics
+- Interpretability
+- Distribution shift
+
+#### Data modalities
+- Computer vision
+- Natural Language Processing
+- Electronic Health Record data
+- Spatio-temporal data
+- Claims data
+- Time-series
+- Social determinants of health
+- Knowledge graphs
+- Mobile health -->
+
+<p><strong>Examples</strong></p>
+<p>Janizek, Joseph D., et al. "<a href="https://dl.acm.org/doi/10.1145/3368555.3384458" target="_blank" rel="noopener">An adversarial approach for the robust classification of pneumonia from chest radiographs.</a>" Proceedings of the ACM Conference on Health, Inference, and Learning 2020.</p>
+<p>Choi, Edward, et al. "<a href="https://papers.nips.cc/paper/7706-mime-multilevel-medical-embedding-of-electronic-health-records-for-predictive-healthcare.pdf" target="_blank" rel="noopener">MiME: Multilevel medical embedding of electronic health records for predictive healthcare.</a>" Advances in Neural Information Processing Systems. 2018.</p>
+<p>McDermott, Matthew BA, et al. "<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/16938/15951" target="_blank" rel="noopener">Semi-supervised biomedical translation with cycle Wasserstein regression GANs.</a>" Thirty-Second AAAI Conference on Artificial Intelligence. 2018.</p>
+<p>Shalit, Uri, Fredrik D. Johansson, and David Sontag. "<a href="https://arxiv.org/abs/1606.03976" target="_blank" rel="noopener">Estimating individual treatment effect: generalization bounds and algorithms.</a>" Proceedings of the 34th International Conference on Machine Learning-Volume 70. JMLR. org, 2017.</p>
+<p>Futoma, Joseph, Sanjay Hariharan, and Katherine Heller. "<a href="https://arxiv.org/abs/1706.04152" target="_blank" rel="noopener">Learning to detect sepsis with a multitask Gaussian process RNN classifier.</a>" Proceedings of the 34th International Conference on Machine Learning-Volume 70. JMLR. org, 2017.</p>
+<!-- Mate, Aditya, et al. "<a href="https://arxiv.org/abs/2007.04432" target="_blank" rel="noopener">Collapsing Bandits and Their Application to Public Health Interventions.</a>" Advances in Neural Information Processing Systems 2020. -->
+
+<p>Neill, D.B., Moore, A.W., Sabhnani, M. and Daniel, K. "<a href="https://www.cs.cmu.edu/~neill/papers/sss-kdd05.pdf">Detection of emerging space-time clusters</a>." In Proceedings of the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining (pp. 218-227). ACM</p>
+      </div>
+      <!-- Track 2 -->
+      <div
+        class="tab-pane fade"
+        id="tab-track-2"
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab"
+      >
+        <h2><center> Applications and Practice:<br /> Investigation, Evaluation, Interpretation, and Deployment </center></h2>
+<h3>Track Chairs</h3>
+<ul>
+<li>Dr. Lifang He </li>
+<li>Dr. Tom Pollard</li>
+<li>Dr. Carl Yang</li>
+<li>Dr. Yu Zhang</li>
+</ul>
+<h3>Description</h3>
+<p>The goal of this track is to highlight works applying robust methods, models, or practices to identify, characterize, audit, evaluate, or benchmark systems. Additionally, unique deployments and datasets used to empirically evaluate these systems are necessary and important to advancing practice. Whereas the goal of Track 1 is to select papers that show significant technical novelty, submit your work here if the contribution is either more focused on solving a carefully motivated problem grounded in applications or on deployments or datasets that enable exploration and evaluation of applications. Introducing a new method is not prohibited by any means for this track, but the focus should be on methods which are designed to work particularly robustly (e.g., fail gracefully in practice), scale particularly well either in terms of computational runtime or data required, work across real-world data modalities and systems, etc. Contributions will be evaluated for technical rigor, robustness, and comprehensivity. We encourage applications and practice in both traditional and emerging clinical areas (e.g., models in electronic health records as well as applications in emerging fields such as remote and telehealth, integration of omics, etc.)</p>
+<p>Computer software submissions should describe the intended use for the software, justify the need for the software, and provide executable examples for other researchers. Software submissions should directly support a healthcare application. Examples include code for summarizing the demographics of a study cohort, deriving meaningful clinical concepts from electronic health records, and natural language processing tools specifically designed for clinical text. All computer software submissions must be open source and released under a suitable open source license. Computer software should adhere to best practices in software development where possible, including the use of unit tests, continuous integration, and diligent documentation of component design and purpose.</p>
+<p>We welcome submissions from a wide variety of perspectives, including but not limited to: examination of robustness of ML systems to real-world dataset shift or adversarial shift, scalable and safe machine learning/inference in clinical environments, new ML tools or comprehensive benchmarks for healthcare, development of scalable systems for processing data in practice, bridging the deployment gap, remote, wearable, and telehealth, data or software packages.</p>
+<p>Upon submission, authors will select one or more relevant sub-discipline(s). Peer reviewers for a paper will be experts in the sub-discipline(s) selected upon its submission.</p>
+<p><strong>Examples</strong></p>
+<p>Pollard TJ, Johnson AE, Raffa JD, Mark RG. "tableone: An open source Python package for producing summary statistics for research papers." JAMIA Open. 2018 May 23;1(1):26-31.</p>
+<p>Johnson AE, Stone DJ, Celi LA, Pollard TJ. "The MIMIC Code Repository: enabling reproducibility in critical care research." Journal of the American Medical Informatics Association. 2017 Sep 27;25(1):32-9.</p>
+<p>Chen, Irene Y., Peter Szolovits, and Marzyeh Ghassemi. "Can AI help reduce disparities in general medical and mental health care?." AMA journal of ethics 21.2 (2019): 167-179. </p>
+<p>Irvin J, Rajpurkar P, Ko M, Yu Y, Ciurea-Ilcus S, Chute C, Marklund H, Haghgoo B, Ball R, Shpanskaya K, Seekins J. "Chexpert: A large chest radiograph dataset with uncertainty labels and expert comparison." arXiv preprint arXiv:1901.07031. 2019 Jan 21.</p>
+<p>Wilson G, Aruliah DA, Brown CT, Hong NP, Davis M, Guy RT, Haddock SH, Huff KD, Mitchell IM, Plumbley MD, Waugh B. "Best practices for scientific computing." PLoS biology. 2014 Jan 7;12(1):e1001745.</p>
+<p>Wei Q, Wang Z, Hong H, Chi Z, Feng DD, Grunstein R, Gordon C. "A residual based attention model for eeg based sleep staging." IEEE Journal of Biomedical and Health Informatics. 2020 Mar 3. </p>
+<p>Nestor B, McDermott MB, Boag W, Berner G, Naumann T, Hughes MC, Goldenberg A, Ghassemi M. "Feature robustness in non-stationary health records: caveats to deployable model performance in common clinical machine learning tasks." In Machine Learning for Healthcare Conference, pp. 381-405. PMLR, 2019.</p>
+<p>Finlayson SG, Bowers JD, Ito J, Zittrain JL, Beam AL, Kohane IS. "Adversarial attacks on medical machine learning." Science 363, no. 6433 (2019): 1287-1289.</p>
+<p>Boag W, Suresh H, Celi LA, Szolovits P, Ghassemi M. "Racial disparities and mistrust in end-of-life care." In Machine Learning for Healthcare Conference, pp. 587-602. PMLR, 2018.</p>
+<p>Henderson J, Ke J, Ho JC, Ghosh J, Wallace BC. "Phenotype instance verification and evaluation tool (PIVET): A scaled phenotype evidence generation framework using web-based medical literature." Journal of medical Internet research 20.5 (2018): e164.</p>
+<p>Wang S, McDermott MB, Chauhan G, Ghassemi M, Hughes MC, Naumann T. "Mimic-extract: A data extraction, preprocessing, and representation pipeline for mimic-iii." In Proceedings of the ACM conference on health, inference, and learning, pp. 222-235. 2020.</p>
+<p>Xu Y, Biswal S, Deshpande SR, Maher KO, Sun J. "Raim: Recurrent attentive and intensive model of multimodal patient monitoring data." In Proceedings of the 24th ACM SIGKDD international conference on Knowledge Discovery &amp; Data Mining, pp. 2565-2573, 2018.</p>
+<p>Tonekaboni S, Joshi S, McCradden MD, Goldenberg A. "What clinicians want: contextualizing explainable machine learning for clinical end use." In Machine Learning for Healthcare Conference, pp. 359-380. PMLR, 2019.</p>
+      </div>
+      <!-- Track 3 -->
+      <div
+        class="tab-pane fade"
+        id="tab-track-3"
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab"
+      >
+        <h2><center> Impact and Society:<br /> Policy, Public Health, and Social Outcomes </center></h2>
+<h3>Track Chairs</h3>
+<ul>
+<li>Dr. Sanja Šćepanović</li>
+<li>Dr. Stephen Pfohl</li>
+<li>Dr. Dimitrios Spathis</li>
+</ul>
+<h3>Description</h3>
+<p>Algorithms do not exist in a vacuum: instead, they often explicitly aim for important social outcomes. This track considers issues at the intersection of algorithms and the societies they seek to impact, specifically for health. Submissions could include methodological contributions such as algorithmic development and performance evaluation for policy and public health applications, large-scale or challenging data collection, combining clinical and non-clinical data, as well as detecting and measuring bias. Submissions could also include impact-oriented research such as determining how algorithmic systems for health may introduce, exacerbate, or reduce inequities and inequalities, discrimination, and unjust outcomes, as well as evaluating the economic implications of these systems.  In other words, we invite submissions tackling the responsible design of AI applications for healthcare and public health. System design for the implementation of such applications at scale is also welcome, which often requires balancing various tradeoffs in decision-making. Submissions related to understanding barriers to the deployment and adoption of algorithmic systems for societal-level health applications are also of interest. In addressing these problems, insights from social sciences, law, clinical medicine, and the humanities can be crucial.</p>
+<p>We welcome papers from but not limited to following areas of interest: responsible AI for health, fairness, equity, ethics and justice, policy, public health, and societal impact of algorithms, interpretability, system design for implementation of ML at scale, regulatory frameworks, tools for the adoption of ML, evaluation of bias in legal and/or health contexts, and human-algorithm interaction.</p>
+<p>Upon submission, authors will select one or more relevant sub-discipline(s). Peer reviewers for a paper will be experts in the sub-discipline(s) selected upon its submission.</p>
+<h3>Examples</h3>
+<p>Bolukbasi, Tolga, et al. "Quantifying and reducing stereotypes in word embeddings." arXiv preprint arXiv:1606.06121 (2016).</p>
+<p>Obermeyer, Ziad, et al. "Dissecting racial bias in an algorithm used to manage the health of populations." Science 366.6464 (2019): 447-453.</p>
+<p>Kleinberg, Jon, and Sendhil Mullainathan. "Simplicity creates inequity: implications for fairness, stereotypes, and interpretability." Proceedings of the 2019 ACM Conference on Economics and Computation. 2019.</p>
+<p>Zink, Anna, and Sherri Rose. "Fair regression for health care spending." Biometrics 76.3 (2020): 973-982.</p>
+<p>Yang, Wanqian, et al. "Incorporating interpretable output constraints in Bayesian neural networks." Advances in Neural Information Processing Systems 33 (2020): 12721-12731.</p>
+<p>Bhatt, Umang, et al. "Explainable machine learning in deployment." Proceedings of the 2020 conference on fairness, accountability, and transparency. 2020.</p>
+<p>Pierson, Emma, et al. "An algorithmic approach to reducing unexplained pain disparities in underserved populations." Nature Medicine 27.1 (2021): 136-140.</p>
+<p>Seyyed-Kalantari, Laleh, et al. "Underdiagnosis bias of artificial intelligence algorithms applied to chest radiographs in under-served patient populations." Nature medicine 27.12 (2021): 2176-2182.</p>
+<p>Panch, Trishan, Heather Mattie, and Leo Anthony Celi. "The “inconvenient truth” about AI in healthcare." NPJ digital medicine 2.1 (2019): 1-3.</p>
+      </div>
+    </div>
+  </div>
+
+      </div>
+  </div>
+
+
+
+  <!-- Sponsors -->
+  
+
+
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-left">© 2023 CHIL Organization Committee</p>
+    </div>
+  </footer>
+
+
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+          integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+          crossorigin="anonymous"></script>
+
+  <script
+          src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+          integrity="sha256-2JaAhvdQnfNMMnhWPauHOZ2k+dzftBmBjjownu3HC4g="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+          integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+          integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+          crossorigin="anonymous"></script>
+
+  <!-- Library libs_ext -->
+  <script type="text/javascript" src="/static/js/libs_ext/typeahead.bundle.js"></script>
+
+  <!--    Internal Libs -->
+  <script type="text/javascript" src="/static/js/data/api.js"></script>
+
+  <!-- Google Analytics -->
+  <script
+          async
+          type="text/javascript"
+          src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+
+      // Nested dropdown navigation menu
+      var ddHoverOrClick = function (e) {
+        var $el = $(this);
+        var $parent = $(this).offsetParent('.dropdown-menu');
+
+        if (!$(this).next().hasClass('show')) {
+            $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+        }
+
+        var $subMenu = $(this).next('.dropdown-menu');
+        $subMenu.toggleClass('show');
+
+        $(this).parent('li').toggleClass('show');
+
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+            $('.dropdown-menu .show').removeClass('show');
+        });
+
+         if (!$parent.parent().hasClass('navbar-nav')) {
+            $el.next().css({
+              "top": $el[0].offsetTop,
+              "left": -$parent.outerWidth()
+            });
+        }
+
+        return false;
+      };
+
+      $('.dropdown-menu a.dropdown-toggle').click(ddHoverOrClick).hover(ddHoverOrClick).on('touchstart', ddHoverOrClick);
+    });
+  </script>
+
+  <!-- Prevent focus from jumping to embedded rocket.chat with an iframe id="chatFrame" -->
+  <script type="text/javascript">
+    if ($("#chatFrame").length > 0) {
+          $("#chatFrame").hide();
+          $("#chatFrame").on(
+            "load",
+            function() {
+              setTimeout(
+                function(){
+                  $('#chatFrame').show();
+                  $('#chatFrame').removeAttr('style');
+                },
+                3000
+              );
+            }
+          )
+    }
+  </script>
+
+  <!-- <script src="/static/js/modules/lazyLoad.js"></script> -->
+
+</body>
+</html>
